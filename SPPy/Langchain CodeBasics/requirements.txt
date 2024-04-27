@@ -1,0 +1,34 @@
+ipykernel                       # for ipynb and interactive partial  kernel execution
+python-dotenv                   # MANDATORY to load env viaraoble from .env
+streamlit                       # quick web by streamlit run main.py
+
+#Deprectade langchain
+langchain-community
+openai
+huggingface_hub
+wikipedia
+#not required seprately pat of lib???? datetime                        # datetime.now().strftime("%d%b%y %H:%M:%S")
+
+#huggingface_hubpip 
+
+
+
+#tools
+#google-search-results          #serpapi
+#numexpr #llmmathchain
+#langgraph                      # >2 agent pipeline
+#langchain_openai
+#langchainhub
+#langsmith                      # UI to see langchain status
+#duckduckgo-search
+#beautifulsoup4
+#gradio
+
+
+#tensorflow crashcourse
+#setuptools
+#deprecated sklearn
+#scikit-learn
+#tensorflow
+#python -m pip show tensorflow --- shoudl show tensorflow
+#keras
