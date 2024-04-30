@@ -139,9 +139,9 @@ if __name__ == "__main__":
     
     #from datetime import datetime #dataetime
     dt_string = "datetime not working "; #datetime.now().strftime("%d%b%y %H:%M:%S")
-    #print(dt_string, spCuisine("Arabian",2))
+    print(dt_string, spCuisine("Arabian",2))
     
-    q="what is square root of thdouble of the area of capital of India?"
+    q="what is the area of capital of India?"
     print(spAgent(q))
 else:
     pass

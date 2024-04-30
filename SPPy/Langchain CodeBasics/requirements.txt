@@ -2,16 +2,32 @@ ipykernel                       # for ipynb and interactive partial  kernel exec
 python-dotenv                   # MANDATORY to load env viaraoble from .env
 streamlit                       # quick web by streamlit run main.py
 
-#Deprectade langchain
+langchain                       #Deprectade 
 langchain-community
+langchain_openai
+#langchain_agents                # for Tools. from langchain.agents import tool
+                                # had to nad upgarde pip in virt env 'curl https://bootstrap.pypa.io/get-pip.py | python'
+                                # AND then faile dto install langchain_agents again
+                                # S0 additionally  had to manually upgrade  do 'pip install --upgrade langchain'
+# got error installing langchain_agents 
+# 'Could not find a version that satisfies the requirement langchain_agents (from versions: none)'
+# https://stackoverflow.com/questions/49745105/could-not-find-a-version-that-satisfies-the-requirement-in-python
+# above asks to 'pip install --upgrade virtenv' did not wwork
+# https://stackoverflow.com/questions/49748063/pip-install-fails-for-every-package-could-not-find-a-version-that-satisfies/49748494#49748494
+# above asks to 'curl https://bootstrap.pypa.io/get-pip.py | python' in virtenv
+# AND then faile dto install langchain_agents again
+# S0 additionally  had to manually upgrade  do 'pip install --upgrade langchain'
+
+#not required seprately pat of lib???? langchain_core                  # for pydantic function calling langchain_core.utils.function_calling.convert_to_openai_functio
 openai
 huggingface_hub
 wikipedia
+groq
 #not required seprately pat of lib???? datetime                        # datetime.now().strftime("%d%b%y %H:%M:%S")
 
 #huggingface_hubpip 
 
-
+boto3                            # for AWS Bedrock
 
 #tools
 #google-search-results          #serpapi
