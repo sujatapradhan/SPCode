@@ -1,3 +1,6 @@
+# https://www.youtube.com/watch?v=s3fWzcMiSJE
+# working
+
 print("Start-------------------------------------")
 ###### Set up Subdirectiry package importing 
 import os,sys
@@ -19,6 +22,7 @@ import boto3   #AWS
 import json
 
 bedrock=boto3.client(service_name='bedrock-runtime',region_name='us-east-1') #'us-west-2')
+
 ####
 prompt='<s>[INST] Which one came first? Egg or Chicken? [/INST]</s>'
 prompt='Which one came first? Egg or Chicken?'

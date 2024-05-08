@@ -111,7 +111,10 @@ def spAgent(q):
     from langchain.agents import AgentType, initialize_agent, load_tools
     tools=load_tools(["wikipedia"],llm=llm)               #https://python.langchain.com/docs/integrations/tools/
     #TODO https://towardsdatascience.com/building-a-math-application-with-langchain-agents-23919d09a4d3
-    agent=initialize_agent(tools,llm,agent=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION,handle_parsing_errors=True,verbose=True)                                        
+    agent=initialize_agent(tools,llm,
+                           agent=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION,
+                           handle_parsing_errors=True,
+                           verbose=True)                                        
     response=agent.run(q)                                        
 
     #get_word_length.invoke("abc")
@@ -138,10 +141,10 @@ if __name__ == "__main__":
     #print(spCuisineMock("Mexican"))
     
     #from datetime import datetime #dataetime
-    dt_string = "datetime not working "; #datetime.now().strftime("%d%b%y %H:%M:%S")
-    print(dt_string, spCuisine("Arabian",2))
+    #dt_string = "datetime not working "; #datetime.now().strftime("%d%b%y %H:%M:%S")
+    #print(dt_string, spCuisine("Arabian",2))
     
-    q="what is the area of capital of India?"
+    q="what is the capital of India?"
     print(spAgent(q))
 else:
     pass

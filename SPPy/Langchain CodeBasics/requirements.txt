@@ -1,9 +1,17 @@
+pinecone-client
 ipykernel                       # for ipynb and interactive partial  kernel execution
 python-dotenv                   # MANDATORY to load env viaraoble from .env
+numpy
+numexpr
+
+#User GUI
 streamlit                       # quick web by streamlit run main.py
+panel                           #The Powerful Data Exploration & Web App Framework for Python
+streamlit_lottie                # why? from ai_interviewer
+jupyter_bokeh                   #Using Panel interactively in VSCode notebooks requires the jupyter_bokeh package to be installed
 
 langchain                       #Deprectade 
-langchain-community
+langchain_community
 langchain_openai
 #langchain_agents                # for Tools. from langchain.agents import tool
                                 # had to nad upgarde pip in virt env 'curl https://bootstrap.pypa.io/get-pip.py | python'
@@ -28,15 +36,20 @@ groq
 #huggingface_hubpip 
 
 boto3                            # for AWS Bedrock
+sagemaker
+pinecone-client
+ipywidgets
+boto3_helpers                   # For logging on cloudwatch import yield_metric_data
+
 
 #tools
 #google-search-results          #serpapi
+duckduckgo-search              # Free comapred to serpapi
 #numexpr #llmmathchain
 #langgraph                      # >2 agent pipeline
 #langchain_openai
 #langchainhub
 #langsmith                      # UI to see langchain status
-#duckduckgo-search
 #beautifulsoup4
 #gradio
 
@@ -48,3 +61,8 @@ boto3                            # for AWS Bedrock
 #tensorflow
 #python -m pip show tensorflow --- shoudl show tensorflow
 #keras
+
+
+openapi-pydantic            # to get API's working  -- https://github.com/langchain-ai/langchain/issues/9520
+                            # To fix AttributeError: 'super' object has no attribute 'parse_obj' using OpenAPISpec.from_text(text) 
+PyPDF2

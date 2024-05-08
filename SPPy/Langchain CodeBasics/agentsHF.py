@@ -13,6 +13,7 @@ from langchain_community.chat_models.huggingface import ChatHuggingFace
 
 llm = HuggingFaceEndpoint(repo_id="HuggingFaceH4/zephyr-7b-beta")
 
+import transformers
 chat_model = ChatHuggingFace(llm=llm)
 
 
