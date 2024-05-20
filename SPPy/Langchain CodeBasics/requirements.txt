@@ -10,7 +10,8 @@ panel                           #The Powerful Data Exploration & Web App Framewo
 streamlit_lottie                # why? from ai_interviewer
 jupyter_bokeh                   #Using Panel interactively in VSCode notebooks requires the jupyter_bokeh package to be installed
 
-langchain                       #Deprectade 
+langchain                       #Deprectade
+langchainhub                    # TO GET SOME TEMPLATES LIKE  
 langchain_community
 langchain_openai
 #langchain_agents                # for Tools. from langchain.agents import tool
@@ -43,15 +44,15 @@ boto3_helpers                   # For logging on cloudwatch import yield_metric_
 
 
 #tools
-#google-search-results          #serpapi
+google-search-results          #serpapi
 duckduckgo-search              # Free comapred to serpapi
 #numexpr #llmmathchain
-#langgraph                      # >2 agent pipeline
+langgraph                      # >2 agent pipeline
 #langchain_openai
 #langchainhub
 #langsmith                      # UI to see langchain status
 #beautifulsoup4
-#gradio
+gradio                   # UI???? 
 
 
 #tensorflow crashcourse
@@ -66,3 +67,5 @@ duckduckgo-search              # Free comapred to serpapi
 openapi-pydantic            # to get API's working  -- https://github.com/langchain-ai/langchain/issues/9520
                             # To fix AttributeError: 'super' object has no attribute 'parse_obj' using OpenAPISpec.from_text(text) 
 PyPDF2
+nltk
+faiss-cpu      #`pip install faiss-gpu` (for CUDA supported GPU) or `pip install faiss-cpu` (depending on Python version).
